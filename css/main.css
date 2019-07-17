@@ -1,0 +1,971 @@
+@import url("plugins.min.css");
+dt { 
+  font-size: 20px; 
+  color: black; 
+  font-weight: bold; 
+  text-align: left;
+}
+dl {
+  border-bottom:1px solid #ccc;
+  margin-top: 12px;
+  padding-top: 8px;
+}
+dt a {
+  color: black; 
+}
+dd {
+/*    padding-left: 12px;*/
+    text-align: left;
+    margin-top: 3%; 
+  display: none;
+}
+.collpse-content {
+  cursor: pointer;
+}
+.page-title {
+  text-align: left;
+}
+.sub-title {
+  text-align: left;
+  color:#F47920; 
+}
+.main-content {
+  text-align: justify;
+}
+.box-content span {
+  display: block;
+    margin-top: 12px;
+}.box-content  {
+  text-align: left;
+}
+#team {
+/*   max-width: 96rem;*/
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+
+}
+#team img {
+  width:25.5rem;
+  height:25.5rem;
+  display:block;
+  margin:0.5rem 1rem 4rem 0.5rem;
+  padding:0;
+  box-sizing:content-box;
+  color:black;
+}
+#team1 img {
+  width:16.5rem!important;
+  height:16.5rem!important;
+  display:block;
+  margin:0.5rem 1rem 4rem 0.5rem;
+  padding:0;
+  box-sizing:content-box;
+  color:black;
+}
+#team1 figcaption {
+  font-size:14px;
+  text-align:center;
+}
+#team2 img {
+  width:16.5rem!important;
+  height:16.5rem!important;
+  display:block;
+  margin:0.5rem 1rem 4rem 0.5rem;
+  padding:0;
+  box-sizing:content-box;
+  color:black;
+}
+#team2 figcaption {
+  font-size:14px;
+  text-align:left;
+}
+figure img {
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;  
+  border-radius:50%; 
+}
+#team figure img {
+  -webkit-transition:opacity 0.26s ease-out;   
+  -moz-transition:opacity 0.26s ease-out;   
+  -ms-transition:opacity 0.26s ease-out;   
+  -o-transition:opacity 0.26s ease-out;   
+  transition:opacity 0.26s ease-out;    
+}
+#team:hover img, #team:active img {
+  opacity:0.3;
+}
+#team:hover img:hover, #team:active img:active {
+  opacity:1;
+}
+figcaption {
+  font-size:2rem;
+  text-align:center;
+}
+.client-logo {
+  margin-bottom: 20px;
+}
+.client-logo img {
+      filter: grayscale(100%);
+}
+.short-links-cont i {
+  padding-left: 12px;
+}
+.short-links-cont a {
+  font-size: 20px;
+    color: black;
+}
+.short-links-cont a:hover {
+    color: #F47920;
+}
+.short-links-cont {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.short-links {
+  background-color:#f8f8f8;
+  padding-top: 50px;
+    padding-bottom: 50px;
+}
+.heading {
+  margin-bottom: 20px;
+}
+.content-item {
+  background: url(../img/banner-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 200px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.content-item .overlay {
+  border-bottom: 100px solid #F47920;
+  border-left: 100px solid transparent;
+  bottom: 0;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 0;
+}
+.content-item:hover .overlay {
+  border-bottom: 800px solid #F47920;
+  border-left: 800px solid transparent;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item .corner-overlay-content {
+  bottom: 15px;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item:hover .corner-overlay-content {
+  opacity: 0;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.content-item .overlay-content {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.content-item .overlay-content h2 {
+  border-bottom: 1px solid #333;
+  padding: 0 0 12px;
+}
+.content-item:hover .overlay-content {
+  opacity: 1;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.navbar {
+  display: block;
+}
+
+#accordion .panel{
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 12px 15px;
+    background: #fff;
+    font-size: 100%;
+    font-weight: 400;
+    color: #000;
+    /*border: 1px solid #ececec;*/
+    box-shadow: 0 0 10px rgba(0,0,0,.05);
+    position: relative;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+}
+#accordion .panel-title a.collapsed{
+    box-shadow: none;
+    color: #676767;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f067";
+    font-family: "FontAwesome";
+    width: 25px;
+    height: 25px;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    transform: rotate(135deg);
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:before{
+    color: #676767;
+    transform: rotate(0);
+}
+#accordion .panel-title a:after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #ececec;
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+#accordion .panel-body{
+    padding: 0px 15px;
+    border: none;
+    font-size: 15px;
+    color: #615f5f;
+    line-height: 27px;
+}
+
+
+/******************* Accordion Demo - 2 *****************/
+#accordion2 .panel-title a{
+    display: block;
+    padding: 12px 15px 12px 50px;
+    background: linear-gradient(to bottom, #fefefe, #cdcdcd);
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #676767;
+    text-shadow: 1px 1px 1px #fff;
+    position: relative;
+}
+#accordion2 .panel-title a:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #929191;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fdfbfb;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    text-shadow: none;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+#accordion2 .panel-title a.collapsed:before{ content: "\f067"; }
+#accordion2 .panel-body{
+    padding: 0px 15px;
+    font-size: 15px;
+    color: #222;
+    line-height: 27px;
+    border: none;
+}
+#accordion2 .panel-body p{ margin-bottom: 0; }
+
+/******************* Accordion Demo - 3 *****************/
+#accordion3{
+    padding-left: 80px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+#accordion3:before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: #004e89;
+    position: absolute;
+    top: 0;
+    left: 22px;
+    z-index: -1;
+}
+#accordion3 .panel-title a{
+    display: block;
+    padding: 10px 30px 15px 0;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #004e89;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+}
+#accordion3 .panel-title a:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #cad5c2;
+    text-align: center;
+    font-size: 17px;
+    color: #004e89;
+    border: 6px solid #004e89;
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+#accordion3 .panel-title a.collapsed:before{
+    content: "\f067";
+    background: #fff;
+}
+#accordion3 .panel-body{
+    padding: 0px 15px;
+    background: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) inset, 0 1px 2px rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    color: #487677;
+    line-height: 25px;
+}
+
+/******************* Accordion Demo - 4 *****************/
+#accordion4 .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+#accordion4 .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+}
+#accordion4 .panel-heading:before,
+#accordion4 .panel-heading:after{
+    content: "";
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+#accordion4 .panel-heading:after{
+    left: auto;
+    right: 10px;
+    transform: rotate(3deg);
+}
+h4.panel-title{margin:10px 0px !important;}
+#accordion4 .panel-title a{
+    display: block;
+    padding: 15px 70px 15px 70px;
+    margin: 0;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #d11149;
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+#accordion4 .panel-title a:before,
+#accordion4 .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 55px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-left: 2px solid #D11149;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#accordion4 .panel-title a.collapsed:before{ content: "\f107"; }
+#accordion4 .panel-title a .icon{
+    display: inline-block;
+    width: 55px;
+    height: 100%;
+    border-right: 2px solid #d11149;
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#accordion4 .panel-body{
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #d11149;
+    border-top: none;
+    background: #fff;
+    font-size: 15px;
+    color: #333;
+    line-height: 27px;
+}
+
+/******************* Accordion Demo - 5 *****************/
+#accordion5 .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 15px 50px;
+}
+#accordion5 .panel-title a{
+    display: block;
+    padding: 10px 20px 10px 60px;
+    background: #fe5f55;
+    border-radius: 30px;
+    border: 2px solid #fe5f55;
+    font-size: 20px;
+    font-weight:400;
+    color: #fff;
+    position: relative;
+}
+#accordion5 .panel-title a.collapsed{
+    border: 2px solid #bbb;
+    background: #fff;
+    color: #bbb;
+}
+#accordion5 .panel-title a:before,
+#accordion5 .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: #fe5f55;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-right: 3px solid #fff;
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+#accordion5 .panel-title a.collapsed:before{
+    content: "\f067";
+    background: #bbb;
+    border: none;
+}
+#accordion5 .panel-body{
+    padding: 10px 15px 0;
+    margin: 0 0 0 30px;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    position: relative;
+}
+#accordion5 .panel-body:before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 90%;
+    background: #fe5f55;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+#accordion5 .panel-body:after{
+    content: "";
+    border-top: 20px solid #fe5f55;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: -48px;
+}
+/******************* Accordion Demo - 6 *****************/
+#accordion6 .panel{
+    border: 1px solid #bf6026;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 50px;
+    margin-bottom: 12px;
+}
+ 
+#accordion6 .panel-heading{
+    padding: 0;
+    background: #fff;
+    position: relative;
+}
+#accordion6 .panel-heading:before,
+#accordion6 .panel-heading:after{
+    content: "";
+    border-right: 8px solid #bf6026;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    position: absolute;
+    top: 12px;
+    left: -9px;
+}
+#accordion6 .panel-heading:after{
+    border-right: 7px solid #fff;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    position: absolute;
+    top: 13px;
+    left: -6px;
+}
+#accordion6 .panel-title a{
+    display: block;
+    padding: 3px 20px 3px 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #bf6026;
+    position: relative;
+    background: #f1f1f2;
+}
+#accordion6 .panel-title a:before,
+#accordion6 .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #bf6026;
+    text-align: center;
+    border: 1px solid #bf6026;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    transition: all 0.5s ease 0s;
+}
+#accordion6 .panel-title a.collapsed:before{ content: "\f067"; }
+#accordion6 .panel-body{
+    padding: 0 15px 15px;
+    border: none;
+    font-size: 14px;
+    color: #807e7e;
+    line-height: 28px;
+}
+#accordion6 .panel-body p{ margin-bottom: 0; }
+
+/******************* Accordion Demo - 7 *****************/
+#accordion7{
+    padding-right: 24px;
+    padding-left: 24px;
+    z-index: 1;
+}
+#accordion7 .panel{
+    border: none;
+    box-shadow: none;
+}
+#accordion7 .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+#accordion7 .panel-title{
+    padding: 0;
+}
+#accordion7 .panel-title a{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    background: #e16b47;
+    color: #f7c59f;
+    padding: 15px 25px;
+    position: relative;
+    margin-left: -24px;
+    transition: all 0.3s ease 0s;
+}
+#accordion7 .panel-title a.collapsed{
+    background: #f7c59f;
+    color: #e16b47;
+    margin-left: 0;
+    transition: all 0.3s ease 0s;
+}
+#accordion7 .panel-title a:before{
+    content: "";
+    border-left: 24px solid #e16b47;
+    border-top: 24px solid transparent;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -24px;
+    transition: all 0.3s ease 0s;
+}
+#accordion7 .panel-title a.collapsed:before{
+    border-left-color: #f7c59f;
+}
+#accordion7 .panel-title a:after{
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+    font-size: 18px;
+    color: #f7c59f;
+}
+#accordion7 .panel-title a.collapsed:after{
+    content: "\f107";
+    color: #e16b47;
+}
+#accordion7 .panel-collapse{
+    position: relative;
+}
+#accordion7 .panel-collapse.in:before{
+    content: "";
+    border-right: 24px solid #f7c59f;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+#accordion7 .panel-body{
+    font-size: 14px;
+    color: #333;
+    background: #e4e4e4;
+    border-top: none;
+    z-index: 1;
+}
+
+/******************* Accordion Demo - 8 *****************/
+#accordion8 .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+#accordion8 .panel-heading{
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+#accordion8 .panel-title a{
+    display: block;
+    padding: 20px 30px 20px 50px;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #20457c;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    border: 1px solid #20457c;
+    border-radius: 5px;
+}
+#accordion8 .panel-title a.collapsed{
+    background: #fff;
+    color: #696969;
+    border: 1px solid #20457c;
+    border-radius: 5px;
+}
+#accordion8 .panel-title a:after,
+#accordion8 .panel-title a.collapsed:after{
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: -13px;
+    background: #a91739;
+}
+#accordion8 .panel-title a.collapsed:after{
+    content: "\f107";
+    background: #e94c6f;
+}
+#accordion8 .panel-title a.collapsed:hover{
+    background: #f1f1f1;
+    color: #20457c;
+}
+#accordion8 .panel-body{
+    font-size: 14px;
+    color: #fff;
+    line-height: 25px;
+    background: #E94C6F;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+/******************* Accordion Demo - 9 *****************/
+#accordion9 .panel{
+    border-radius:0;
+    margin-bottom:15px;
+}
+#accordion9 .panel-heading{
+    padding:0;
+}
+#accordion9 .panel-title{
+    position: relative;
+}
+#accordion9 .panel-title:before{
+    content: "";
+    border-bottom: 25px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #ccc;
+    border-top: 23px solid rgba(0, 0, 0, 0);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 34px;
+}
+#accordion9 .panel-title a{
+    color:#fff;
+    background:#e63c22;
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight:500;
+    text-transform: uppercase;
+    padding: 13px 10px 13px 65px;
+}
+#accordion9 .panel-title a.collapsed{
+    color:#5b5656;
+    background:#fff;
+}
+#accordion9 .panel-title a:before,
+#accordion9 .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top:0;
+    left:0px;
+    padding:14px 10px;
+    color:#e63c22;
+    background:#ccc;
+}
+#accordion9 .panel-title a.collapsed:before{
+    content: "\f067";
+}
+#accordion9 .panel-body{
+    color: #828282;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/******************* Accordion Demo - 10 *****************/
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion10 .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 30px 10px 30px;
+    overflow: hidden;
+    position: relative;
+}
+#accordion10 .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+#accordion10 .panel-title a{
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    background: #fe7725;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 0;
+    position: relative;
+}
+#accordion10 .panel-title a.collapsed{ background: #1c2336;}
+#accordion10 .panel-title a:before,
+#accordion10 .panel-title a.collapsed:before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #fe7725;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+#accordion10 .panel-title a.collapsed:before{
+    content: "\f067";
+    background: #ababab;
+    border: 4px solid #626262;
+}
+#accordion10 .panel-title a:after,
+#accordion10 .panel-title a.collapsed:after{
+    content: "";
+    width: 17px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+#accordion10 .panel-title a.collapsed:after{
+    width: 19px;
+    background: #ababab;
+}
+#accordion10 .panel-body{
+    border-left: 3px solid #fe7725;
+    border-top: none;
+    background: #fff;
+    font-size: 15px;
+    color: #1c2336;
+    line-height: 27px;
+    position: relative;
+}
+#accordion10 .panel-body:before{
+    content: "";
+    height: 3px;
+    width: 50%;
+    background: #fe7725;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+#personal-ln-page .header-banner {
+    height: 100vh;
+	background-image: url("../img/banner/min/banner-img-pers.jpg");
+	background-position: center;
+}
+#home-pg .header-banner {
+    height: 100vh;
+	background-image: url("../img/banner/min/banner-img-homepage.jpg");
+	background-position: center;
+}
+#homeloan-pg .header-banner {
+    height: 100vh;
+	background-image: url("../img/banner/min/banner-img-homeloan.jpg");
+	background-position: center;
+}
+#smeloan-pg .header-banner {
+    height: 100vh;
+	background-image: url("../img/banner/min/banner-img-SME.jpg");
+	background-position: center;
+}
+#eduloan-pg .header-banner {
+    height: 100vh;
+	background-image: url("../img/banner/min/banner-img-edu.jpg");
+	background-position: center;
+}
+/*.prod-pgs section {padding-bottom: 100px;padding-top: 100px;}*/
+.loanrow2 {margin-top: 30px;}
+/*.pers-pg {height: 100vh;}*/
+/*
+.header-banner {
+    height: 670px;
+}
+
+
+.price-btn a.apply-link-text {
+	color: #fff;
+}
+*/
+.apply-link-text:hover {
+	color: white;
+}
+
+.hidden {
+   display: none;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video, iframe {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.cb{clear: both;}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Heavy.eot');
+	src: url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Avenir-Heavy.woff') format('woff'),
+		url('../fonts/Avenir-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'beyond';
+	src:url('../fonts/beyond_the_mountains.ttf') format('truetype');
+	
+}
+
+@font-face {
+	font-family: 'calibrili';
+	src:url('../fonts/calibrili.ttf') format('truetype');
+	
+}
+@font-face {
+	font-family: "Myriad Pro";
+	src:url(../fonts/Intelo-Bold.ttf) format('truetype');
+	
+}
+@font-face {
+	font-family: "Myriad Pro";
+	src:url(../fonts/Intelo-Light.ttf) format('truetype');
+	
+}
+
+@font-face {
+	font-family: "Myriad Pro";
+	src:url(../fonts/Intelo-Medium.ttf) format('truetype');
+	
+}
+/*common classes start*/
+.pd0{ padding:0px;}
+.pdr5{padding-right: 2%;}
+.pdl2{padding-left: 2%;}
+
+.mr0{ margin:0px;}
+.flt{ float:left}
+.frt{ float:right;}
+.clear{ clear:both;}
+.mrt40{ margin-top:40px;}
+.pdl0{ padding-left:0px;}
+.pdr0{ padding-right:0px;}
+.mrr5{ margin-right:6%;}
+.mll6{ margin-left:4%;}
+
+.mrr50{ margin-right:50px;}
+.mrt10{ margin-top:10px;}
+.mrb30{ margin-bottom:30px;}
+.mrb60{ margin-bottom:60px;}
+
+/*common classes end*/
+
+
+/*desktop*/
+@media only screen and (min-width: 1200px)
+{
+.gridContainer {width: 100%;}
+.banner_content{ position:absolute; color:#fff; top:45%; left:25%;}
+.banner_hd{ color:#fff; line-height:60px; font-family: "Myriad Pro"; display: block;}
+.banner_hd h2{ font-size:275%; color:#fff;  line-height:20px; font-family: "Myriad Pro"; display: block; text-align: center;}
+.banner_hd span{ font-size:120%; color:#f26722;  width: 50%; font-family: 'beyond'; text-transform:capitalize; }
+.banner_hd p{font-size:180%; font-family: "Myriad Pro"; text-align: center; text-transform: uppercase;}
+}
+
+/*mobile*/
+@media only screen 
+and (min-device-width : 320px) 
+	and (max-width: 590px){
+	.gridContainer {width: 100%;}
+}
+
+
+/*tab*/
+@media only screen and (min-width: 768px) {
+	.gridContainer {width: 100%;}
+}
+	
+

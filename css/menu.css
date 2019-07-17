@@ -1,0 +1,103 @@
+.navbar-inverse {
+  background:#fff;
+  border: none; font-size:18px; height:70px; position:fixed; top:0;
+}
+.chcke-rate:hover {
+    color: #F47920!important;
+    background: #fff;
+	border: 1px solid #F47920;   
+    border-radius: 30px;
+}
+.top-menu{ float:right; margin-top:20px; -webkit-transition:1s ease all; -moz-transition:1s ease all; transition:1s ease all;}
+.top-menu .fa-bars{ border:2px solid #F47920; height:25px; width:25px; font-size:15px; padding-top:3px; text-align:center; -webkit-border-radius:100px; -moz-border-radius:100px; border-radius:100px;}
+.top-menu .fa-user-circle-o{ font-size:25px; position:relative; bottom:-4px;}
+.navbar-inverse li > a{ color:#F47920;}
+.navbar-inverse li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{color:#F47920;}
+
+/* added to  .nav */
+.normal {
+xheight: 75px; /* this causes drop down to lose color ??? */
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+.normal .navbar-right {
+padding-top: 12px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+.navbar-brand {
+padding: 0px !important; padding-top:10px!important; -webkit-transition:1s ease all; -moz-transition:1s ease all; transition:1s ease all;}
+.navbar-brand img {
+padding: 0px;
+max-height: 45px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+.flot-menu{ position:absolute; width:225px; height:385px; z-index:9999; background:#fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4);-moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4);box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4); top:60px; right:5.5%; -webkit-transition:1s ease all; -moz-transition:1s ease all; transition:1s ease all; display:none; font-size:14px;}
+.flot-menu ul{ margin-left:30px; margin-top:10px;}
+.flot-menu ul li{ padding-top:6px;}
+.flot-menu ul li i{ margin-right:5px; height:25px; font-size:13px; width:25px; border:1px solid #7d7d7d; text-align:center; padding-top:5px; -webkit-border-radius:100px; -moz-border-radius:100px; border-radius:100px;}
+.flot-menu ul li a{ color:#7d7d7d;}
+.flot-menu ul li a:hover i{border-color:#F47920;}
+.flot-menu span.fa-caret-up { position:relative; top:-15px; font-size:22px; color:#fff; float:right; right:50px;}
+.flot-menu span.fa-close{ display:none;}
+.shrink {
+height: 50px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+.shrink.navbar-inverse{ background:#fff; height:100px;}
+.shrink .navbar-brand {padding-top:30px!important;}
+.shrink .top-menu{ margin-top:35px;}
+.shrink .flot-menu{ top:80px;}
+.shrink .navbar-right {
+padding-top: 0px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+.shrink .navbar-brand img {
+max-height: 50px;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+
+@media(max-width:1199px){
+.flot-menu{top:90px; right:-2.5%;}	
+}
+
+@media(max-width:991px){
+.flot-menu{position: fixed; width:225px; min-height:550px; z-index:9999; background:#fff; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px; -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4);-moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4);box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.4); top:0px; right:0%; -webkit-transition:1s ease all; -moz-transition:1s ease all; transition:1s ease all; display:none; font-size:14px;}
+.shrink .flot-menu{ top:0px;}	
+.flot-menu span.fa-caret-up{ display:none;}
+.flot-menu span.fa-close{ display: block; position:absolute; border:2px solid #F47920; height:25px; width:25px; font-size:15px; padding-top:3px; text-align:center; -webkit-border-radius:100px; -moz-border-radius:100px; border-radius:100px; color:#F47920;top:25px; right:30px;}
+.flot-menu ul{ margin-left:30px; margin-top:80px;}
+}
+
+@media(max-width:767px){
+.navbar-brand {padding: 20px !important;padding-top: 13px!important;}
+.top-menu {margin-top: -30px;}
+.shrink .navbar-brand {padding-top: 13px!important;}
+.shrink .top-menu {margin-top: -20px;}
+.shrink.navbar-inverse {background: #fff; height: 70px;}
+.flot-menu span.fa-close {top: 33px; right: 20px;}
+
+	}
+a.menu-t {
+    border: 1px solid #f26d48;
+    padding: 8px;
+}
